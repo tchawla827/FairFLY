@@ -34,7 +34,7 @@ INSERT INTO organizational_info(
   airline_account_no
 )
 VALUES(
-  'B Airways',
+  'FairFLY',
   '+61396906345',
   'info@bairways.com',
   '314, 3rd Floor, Gotham Towers',
