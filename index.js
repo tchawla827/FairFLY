@@ -20,6 +20,7 @@ if (!process.env.SESSION_SECRET) {
 }
 
 const PORT = process.env.PORT || 4000;
+const SERVER_ADDRESS = process.env.SERVER_ADDRESS || '127.0.0.1';
 
 /* Init express */
 const app = express();
@@ -56,9 +57,7 @@ app.use(routes);
 /* Start server */
 app.listen(PORT, () => {
     console.log(`✅ Express server running on port ${PORT} in ${app.settings.env} mode`);
+    console.log(`🌍 Open in browser: \x1b[36mhttp://${SERVER_ADDRESS}:${PORT}\x1b[0m`);
 });
 
 module.exports = app;
-
-
-
